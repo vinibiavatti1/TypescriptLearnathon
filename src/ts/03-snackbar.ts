@@ -1,11 +1,11 @@
-function showSnackbar(status, message) {
-  return {
-    colorClass: `color-${status}`,
-    message,
-  };
+let distanceFilter: number[] = [10, 20];
+
+function setDistance(begin: number, end: number) {
+  distanceFilter = [begin, end];
+}
+function setFilter(newDistanceFilter: number[]) {
+  distanceFilter = newDistanceFilter;
 }
 
-showSnackbar('error', 'Something went wrong');
-showSnackbar('warning', 'Something went wrong');
-showSnackbar('info', 'Your action is being processed');
-showSnackbar('success', 'Saved successfully');
+setDistance(30, 40);
+setFilter([30, 40]);

@@ -1,7 +1,15 @@
-function join(arr) {
+// function join(arr) {
+//   let result = '';
+//   arr.foreach(item => (result += item));
+//   return result;
+// }
+
+// join();
+
+function join(arr: string[]): string {
   let result = '';
-  arr.foreach(item => (result += item));
+  arr.forEach(item => (result += item));
   return result;
 }
-
-join();
+let arr: string[];
+join(arr);

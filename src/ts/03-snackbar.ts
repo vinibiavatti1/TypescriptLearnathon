@@ -1,4 +1,9 @@
-function showSnackbar(status, message) {
+interface SnackBar {
+  colorClass: string;
+  message: string;
+}
+
+function showSnackbar(status: string, message: string): SnackBar {
   return {
     colorClass: `color-${status}`,
     message,

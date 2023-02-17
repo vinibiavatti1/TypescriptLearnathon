@@ -1,9 +1,9 @@
-let distanceFilter = [10, 20];
+let distanceFilter: number[] = [10, 20];
 
-function setDistance(begin, end) {
+function setDistance(begin: number, end: number) {
   distanceFilter = [begin, end];
 }
-function setFilter(newDistanceFilter) {
+function setFilter(newDistanceFilter: number[]) {
   distanceFilter = newDistanceFilter;
 }
 
